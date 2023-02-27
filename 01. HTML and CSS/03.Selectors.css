@@ -1,3 +1,19 @@
-section span {
-    color: cyan;
+.post {
+    text-decoration: underline wavy olive;
+}
+span {
+    background-color: black;
+    color: wheat;
+    font-size: 1.6rem;
+}
+
+p span {
+    background-color: blueviolet;
+    color: aqua;
+    font-size: 1rem;
+}
+
+
+input + button {
+    background-color:lightcoral;
 }
