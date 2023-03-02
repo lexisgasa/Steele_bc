@@ -1,6 +1,7 @@
 .post {
     text-decoration: underline wavy olive;
 }
+
 span {
     background-color: black;
     color: wheat;
@@ -16,4 +17,12 @@ p span {
 
 input + button {
     background-color:lightcoral;
+}
+
+footer a {
+    color: red;
+}
+
+footer > a {
+    color: midnightblue;
 }
