@@ -46,7 +46,3 @@ section:last-of-type h1:nth-of-type(2) {
 section:last-of-type h1:nth-of-type(3) {
     transform: rotate(180deg) scale(0.6) translateX(10em);
 }
-
-section:last-of-type h1:nth-of-type(3) {
-    transform: rotate(180deg) scale(0.6) translateX(10em);
-}
