@@ -1,0 +1,10 @@
+html, body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 30vw;
+    margin: calc(10%/6);
+}
