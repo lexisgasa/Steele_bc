@@ -1,0 +1,127 @@
+html, body {
+    font-family:'Open Sans', sans-serif;
+    background-color: #60a9ff;
+    width: 100vw;
+    height: 50vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 3em 6em;
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    border-right: 1px solid #e1f1ff
+}
+
+.pricing-plan:last-child {
+    border-right: none;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-img {
+    margin-bottom:1em;
+    width: 20vw;
+}
+
+.pricing-features {
+    margin: 3em 0 2em;
+    color: #016ff9;
+}
+.pricing-features-item {
+    list-style: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 1em 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child{
+    border-bottom: 1px solid #e1f1ff;
+
+}
+
+.pricing-price {
+    color: #016ff9;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.pricing-button {
+    border: 1px solid #9dd1f9;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    margin: 1em 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.pricing-button:hover {
+    background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured { 
+    background-color: #48aaff;
+    color: #fff;
+}
+
+.pricing-button.is-featured:hover {
+    background-color: #269aff;
+}
+
+/* ------------------------------------------------- */
+
+
+/* MEDIA QUERIES */
+
+
+/* ------------------------------------------------- */
+
+
+
+@media (max-width: 940px) {
+    html, body {
+        height: inherit;
+    }
+    .panel {
+        width: 100vw;
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+    .pricing-plan{
+        border: 1px solid #e1f1ff
+    }
+    .pricing-img {
+        margin-bottom:1em;
+        width: 95vw;
+    }
+    .pricing-plan {
+        border-bottom: 1px solid #e1f1ff;
+    
+    }
+    .pricing-plan:last-child {
+        border-bottom: none;
+    }
+};
