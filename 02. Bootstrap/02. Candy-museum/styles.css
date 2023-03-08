@@ -1,0 +1,38 @@
+html, body{
+    background-color: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+#mainNavBar { 
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+#mainNavBar .navbar-brand {
+    color: #ea1c2c;
+}
+
+#mainNavBar .nav-link {
+    color: white;
+}
+#mainNavBar .nav-link:hover {
+    color: #ea1c2c;
+}
+
+#headingGroup h2 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+#headingGroup span {
+    color: #ea1c2c;
+}
+
+
+/* -----------------------    MEDIA QUERY   ------------------------- */
+
+@media (max-width:1200px) {
+
+    #headingGroup h2 {
+        font-size: 3rem;
+    }
+}
