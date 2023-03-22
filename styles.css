@@ -1,5 +1,5 @@
 html, body {
-    margin: 0;
+    margin: 3rem 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -13,4 +13,22 @@ html, body {
 
 span {
     color: rebeccapurple;
+}
+
+button {
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.2s;
+    margin: 1rem;
+}
+
+button:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em) scale(1.01);
+    cursor: pointer;
 }
