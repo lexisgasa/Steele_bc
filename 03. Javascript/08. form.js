@@ -17,3 +17,21 @@ form.addEventListener("submit", (e) => {
 })
 
 
+
+
+
+//  ejemplo 2
+
+// const form = document.querySelector("form")
+// const item = document.querySelector("#item")
+// const qty = document.querySelector("#qty")
+// const cart = document.querySelector("#cart")
+
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     const newList = document.createElement("li")
+//     newList.innerText = `${item.value} - ${qty.value}`;
+//     cart.appendChild(newList)
+//     item.value = "";
+//     qty.value = "";
+// })
