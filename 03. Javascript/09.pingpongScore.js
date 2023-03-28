@@ -7,7 +7,7 @@ const title2 = document.querySelector("main h2 span:nth-of-type(2)")
 
 const selectRounds = document.querySelector("#rounds") 
 
-let winScore = 5;
+let winScore = 2;
 let scoreP1 = 0;
 let scoreP2 = 0;
 let isGameOver = false;
@@ -19,7 +19,9 @@ btn1.addEventListener("click", () => {
         title1.innerText = scoreP1;
         if ( scoreP1 == winScore ){
             isGameOver = true;
-        }
+            title1.style.color = "green"
+            title2.style.color = "red"
+        } 
     }
 })
 // lo mismo para el 2do boton
@@ -28,6 +30,8 @@ btn2.addEventListener("click", () => {
         scoreP2++;
         if ( scoreP2 == winScore ){
             isGameOver = true;
+            title1.style.color = "red"
+            title2.style.color = "green"
         }
         title2.innerText = scoreP2;
     }
@@ -39,6 +43,8 @@ let reset = () => {
     scoreP2 = 0
     title1.innerText = 0;
     title2.innerText = 0;
+    title1.style.color = "black";
+    title2.style.color = "black";
 }
 
 btn3.addEventListener("click", reset)
