@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping pong score keeper</title>
+    <script src="./09.pingpongScore.js" defer></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+        }
+        img {
+            width: 40vw;
+        }
+        div {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5vw;
+          margin-top: 5vw;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <header>
+        <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+        <p></p>
+    </header>
+    <main>
+        <h2><span>0</span> to <span>0</span> </h2>
+        <p>Keep the track of your score</p>
+        <form action="">
+            <label for="">Playing to: </label>
+            <select name="" id="rounds">
+                <option value="">-- Select the points --</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">12</option>
+                <option value="12">11</option>
+            </select>
+        </form>
+    </main>
+    <footer>
+        <button>+1 point player 1</button>
+        <button>+1 point player 2</button>
+        <button>Reset</button>
+    </footer>
+    </div>
+</body>
+</html>
