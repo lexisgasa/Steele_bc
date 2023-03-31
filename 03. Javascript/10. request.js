@@ -1,3 +1,5 @@
+
+// definicion de funcion para el callback, simulando que si el delay es supeior a 3000, dará error
 const fakeRequestCallback = ( url, success, failure ) => {
     // el fake hace un delay de 500 hasta 5000
     const delay = Math.floor( Math.random()* 3500 )
@@ -10,6 +12,9 @@ const fakeRequestCallback = ( url, success, failure ) => {
     }, delay)
 }
 
+
+// similar definicion de funcion usando promesas, simulando que si el delay es supeior a 3000, dará error, 
+// no son necesarios los parametros de success y failure
 const fakeRequestPromise = ( url ) => {
     return new Promise ( (resolve, reject ) => {
         const delay = Math.floor( Math.random() * 3500 )
@@ -23,8 +28,8 @@ const fakeRequestPromise = ( url ) => {
     })
 }
 
-
-const callback = () => {
+// así queda la estructura de llamada de 3 funciones callback, creando el famoso callback hell
+const callbackHell = () => {
     fakeRequestCallback( "books.com/",
     (response) => {
         console.log("IT WORKED")
@@ -53,7 +58,7 @@ const callback = () => {
 }
 
 
-
+// asi queda usando promesas, no varia mucho del callback hell
 const promisesHell = () => {
     fakeRequestPromise("yelp.com/api/coffe/page1")
         .then((response1) => {
@@ -84,6 +89,7 @@ const promisesHell = () => {
         })
 }
 
+// asi se utilizaria encadenando las promesas
 const promises = () => {
     fakeRequestPromise("yelp.com/api/coffee/page1")
     .then( (response) => {
