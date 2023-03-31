@@ -9,6 +9,7 @@
 // }
 
 // delayedRainbow("red",1000)
+// .then( () => delayedRainbow("red", 1000) )
 // .then( () => delayedRainbow("orange", 1000) )
 // .then( () => delayedRainbow("yellow", 1000) )
 // .then( () => delayedRainbow("green", 1000) )
