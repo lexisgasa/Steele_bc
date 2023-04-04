@@ -61,3 +61,24 @@ const btn = document.querySelector("button")
 const list = document.querySelector("ul")
 // no usar funcion() o se llamara en cuanto se recarga la pagina
 btn.addEventListener("click", addNewJoke);
+
+
+
+/*
+sin usar axios
+
+const getDadJoke2 = async () => {
+    try {
+        const response = await fetch("https://icanhazdadjoke.com/", {
+            headers : {
+                Accept: "application/json"
+            }  
+        })
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log(error)
+    }
+
+}
+*/
