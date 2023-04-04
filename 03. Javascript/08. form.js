@@ -1,4 +1,4 @@
-const Form = document.querySelector("form")
+const form = document.querySelector("form")
 const input = document.querySelector("input")
 const stuffList = document.querySelector("#stuffList")
 
