@@ -8,7 +8,9 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"))
 
 
-app.get("/",(req, res) => {
+
+
+app.get("/random",(req, res) => {
     // la respuesta renderizara la view llamada home.ejs
     const randomNumber = Math.floor( Math.random()*10 ) + 1
     res.render("home", { ranNum: randomNumber})
