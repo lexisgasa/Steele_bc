@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ejs se puede usar en todo el documento! -->
-    <title> <%= subreddit %> subreddit!</title>
+    <title> Browsing the <%= name %> subreddit!</title>
 </head>
 <body>
-    <h1> Welcome to the <%= subreddit %> subreddit!</h1>
+    <!-- se puede usar solo name, description o posts ya que se ha usado el spread operator y se tienen los valores individuales -->
+    <h1> Welcome to the <%= name %> subreddit!</h1>
+    <h2><%= description %></h2>
+    <p>Currently <%= subscribers %> subscribers, and growing!</p>
+    <hr>
+    <!-- el posts sigue siendo un objeto que contiene diferentes valores, asi que un ciclor for of es el que hace loop en objetos para tener sus keys y valores -->
+    <% for (let post of posts) { %>
+        <article>
+            <p><%= post.title %> <i>by <%= post.author %></i></p>
+            <% if(post.img) { %>
+                <img src="<%= post.img %>" alt="">
+            <% } %>
+            </article>
+    <% } %>
 </body>
 </html>
