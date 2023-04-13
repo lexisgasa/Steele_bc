@@ -8,6 +8,8 @@ const redditData = require("./data.json")
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"))
 
+// busca  por la carpeta public cuando cojamos css y js
+app.use(express.static(path.join(__dirname, "public")));
 
 // string dinamica = todo lo que se escriba en el navegador se genera como objeto en params de la request
 // la respuesta a enviar es el render de la pagina home
