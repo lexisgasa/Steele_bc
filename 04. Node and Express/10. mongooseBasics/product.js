@@ -33,7 +33,27 @@ async function main() {
     }
   });
 
-  const Product = mongoose.model("Product", productSchema);
+  
+//   productSchema.methods.greet = function () {
+//       console.log("Hello hi!!! HOWDY!!") 
+//       console.log(`this is ${this.name} and cost ${this.price}`)
+//     }
+
+productSchema.methods.toggleOnSale = function () {
+    this.onSale = !this.onSale
+    return this.save();
+}
+
+    const Product = mongoose.model("Product", productSchema);
+
+const findProduct = async () => {
+    const foundProduct = await Product.findOne({name: "Speedy"});
+    console.log(foundProduct)
+    await foundProduct.toggleOnSale();
+    console.log(foundProduct)
+}
+
+findProduct();
 
 //   const bike = new Product({ name: "Mountain Bike", price: 999, categories: ["cycling"] })
 //   bike.save()
@@ -44,7 +64,7 @@ async function main() {
 //             console.log(error)
 //         })
 
-// actualizar producto
+// crear un producto ------ creacion
 // primero crearlo y comentarlo para que no se duplique más veces
 /*
 const pump = new Product({ name: "Tire pump", price: 19.99, categories: ["cycling"] })
@@ -53,10 +73,13 @@ pump.save()
 .catch(err => console.log(err));
 */
 
-// actualizarlo
+// para actualizarlo ----- actualizarlo
 // regex busca algo que haga match con el nombre
 // mongoose no necesita $set para updatear
 // al poner new:true y hacer el console log saldra la version actualizada
+/*
 Product.findOneAndUpdate({ name: {$regex: "Tire"}}, {price: 100}, {new: true})
 .then(data => console.log(data))
 .catch(err => console.log(err))
+*/
+
