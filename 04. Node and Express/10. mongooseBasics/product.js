@@ -34,26 +34,36 @@ async function main() {
   });
 
   
-//   productSchema.methods.greet = function () {
-//       console.log("Hello hi!!! HOWDY!!") 
-//       console.log(`this is ${this.name} and cost ${this.price}`)
-//     }
+productSchema.methods.greet = function () {
+    console.log("============")
+    console.log("HELLO! HI!!! HOWDY!!") 
+    console.log("============")
+    console.log(`this is ${this.name} and cost ${this.price}`)
+    console.log("============")
+}
 
 productSchema.methods.toggleOnSale = function () {
     this.onSale = !this.onSale
     return this.save();
 }
 
-    const Product = mongoose.model("Product", productSchema);
+productSchema.statics.fireSale = function() {
+    return this.updateMany({}, {price: 0})
+}
+
+const Product = mongoose.model("Product", productSchema);
 
 const findProduct = async () => {
-    const foundProduct = await Product.findOne({name: "Speedy"});
+    const foundProduct = await Product.findOne();
+    foundProduct.greet();   
     console.log(foundProduct)
     await foundProduct.toggleOnSale();
     console.log(foundProduct)
 }
 
 findProduct();
+
+
 
 //   const bike = new Product({ name: "Mountain Bike", price: 999, categories: ["cycling"] })
 //   bike.save()
@@ -83,3 +93,5 @@ Product.findOneAndUpdate({ name: {$regex: "Tire"}}, {price: 100}, {new: true})
 .catch(err => console.log(err))
 */
 
+// este codigo va a actualizar todos precios a 0
+Product.fireSale().then( res => console.log(res))
