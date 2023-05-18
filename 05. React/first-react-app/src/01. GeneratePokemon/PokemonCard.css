@@ -1,0 +1,8 @@
+.PokemonCard {
+    border: 1px solid red;
+    width: 30rem;
+}
+
+.PokemonCard h1 {
+    color: blue;
+}
