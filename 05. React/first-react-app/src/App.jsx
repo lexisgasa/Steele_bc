@@ -1,10 +1,11 @@
+import Slots from "./02. Props/Slots";
 import "./App.css";
 // import PokemonGenerator from './01. GeneratePokemon/PokemonCard'
 // import {Greeter, Die} from "./02. Props/Greeter";
 // import ListPicker from "./02. Props/ListPicker";
 // import DoubleDice from "./02. Props/DoubleDice";
 // import Heading from "./02. Props/Heading";
-import ColorList from "./02. Props/ColorList";
+// import ColorList from "./02. Props/ColorList";
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
       ====================
       <DoubleDice/>
       ==================== */}
-      <ColorList colors={["red", "blue","green","gold"]} />
+      {/* <ColorList colors={["red", "blue","green","gold"]} /> */}
+      <Slots options={["🍒","🍌","🍇"]} />
+      <Slots options={["🍒","🍌","🍇"]} />
 
     </div>
   );
