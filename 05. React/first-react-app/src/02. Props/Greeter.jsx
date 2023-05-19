@@ -1,3 +1,5 @@
+// ejemplo para pasar strings o numeros de propiedades
+
 
 // la forma simple
 // function Greeter(props) {
@@ -5,12 +7,12 @@
 // }
 
 
-// la forma destructurada + propiedad por defecto no indicada en el hijo
+// la forma desestructurada
 function Greeter({person, from = "someone"}) {
     return <h1> Hello {person} - from {from} </h1>
 }
 
-// pasar numeros en las propiedades + propiedad por defecto aunque indicada en el hijo
+// pasar numeros en las propiedades
 function Die({numSides = 6}){
     const roll = Math.floor(Math.random()*numSides)+1;
     return <h2>Die roll: {roll}</h2>
