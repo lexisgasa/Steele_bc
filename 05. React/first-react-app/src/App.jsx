@@ -2,8 +2,9 @@ import "./App.css";
 // import PokemonGenerator from './01. GeneratePokemon/PokemonCard'
 // import {Greeter, Die} from "./02. Props/Greeter";
 // import ListPicker from "./02. Props/ListPicker";
-import DoubleDice from "./02. Props/DoubleDice";
-import Heading from "./02. Props/Heading";
+// import DoubleDice from "./02. Props/DoubleDice";
+// import Heading from "./02. Props/Heading";
+import ColorList from "./02. Props/ColorList";
 
 function App() {
   return (
@@ -14,15 +15,14 @@ function App() {
       <Die />
       <Die numSides={20} />
       <ListPicker values={[1,2,3,4,5,6,7,8,9]}/> */}
-      <Heading color="rebeccapurple" text="New game" fontSize="3.5rem"/>
-      <Heading text="Continue"/>
-      <DoubleDice/>
+      {/* <Heading color="rebeccapurple" text="New game" fontSize="3.5rem"/>
+      <Heading text="Continue"/> */}
+      {/* <DoubleDice/>
       ====================
       <DoubleDice/>
-      ====================
-      <DoubleDice/>
-      ====================
-      <DoubleDice/>
+      ==================== */}
+      <ColorList colors={["red", "blue","green","gold"]} />
+
     </div>
   );
 }
