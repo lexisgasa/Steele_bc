@@ -8,8 +8,11 @@ import "./App.css";
 // import Slots from "./02. Props/Slots";
 // import ShoppingList from "./03. ShoppingListDemo/ShoppingList";
 // import RentalPractice from "./03. ShoppingListDemo/RentalPractice";
-import Clicker from "./04. Events/Clicker";
-import EventPractice from "./04. Events/EventPractice";
+// import Clicker from "./04. Events/Clicker";
+// import EventPractice from "./04. Events/EventPractice";
+import Counter from "./05. State/Counter";
+import Toggler from "./05. State/Toggler";
+
 
 // ejercicio lista items
 // const data = [
@@ -50,8 +53,10 @@ function App() {
       {/* <Slots options={["🍒","🍌","🍇"]} /> */}
       {/* <ShoppingList items={data} /> */}
       {/* <RentalPractice data={properties}/> */}
-      <Clicker />
-      <EventPractice text="Do not click me" log="Why you clicked me?!" />
+      {/*<Clicker />*/}
+      {/*<EventPractice text="Do not click me" log="Why you clicked me?!" />*/}
+      <Counter />
+      <Toggler />
     </div>
   );
 }
