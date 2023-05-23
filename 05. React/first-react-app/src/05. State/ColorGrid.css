@@ -1,0 +1,7 @@
+.ColorGrid {
+    width: 60vw;
+    height: 70vh;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}

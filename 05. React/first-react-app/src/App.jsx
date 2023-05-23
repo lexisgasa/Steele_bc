@@ -10,8 +10,11 @@ import "./App.css";
 // import RentalPractice from "./03. ShoppingListDemo/RentalPractice";
 // import Clicker from "./04. Events/Clicker";
 // import EventPractice from "./04. Events/EventPractice";
-import Counter from "./05. State/Counter";
-import Toggler from "./05. State/Toggler";
+// import Counter from "./05. State/Counter";
+// import Toggler from "./05. State/Toggler";
+// import ToggleCounter from "./05. State/ToggleCounter"
+// import ColorExercise from "./05. State/ColorExercise";
+import ColorGrid from "./05. State/ColorGrid";
 
 
 // ejercicio lista items
@@ -34,6 +37,36 @@ import Toggler from "./05. State/Toggler";
 //   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 // ];
 
+// ejercicio caja color
+const colorPalette = [
+  "#cdb4db",
+  "#be95c4",
+  "#9f86c0",
+  "#5e548e",
+  "#231942",
+  "#f72585",
+  "#7209b7",
+  "#3a0ca3",
+  "#4361ee",
+  "#4cc9f0",
+  "#560bad",
+  "#b5179e",
+  "#7209b7",
+  "#ffc6ff",
+  "#bdb2ff",
+  "#a0c4ff",
+  "#9bf6ff",
+  "#ffc8dd",
+  "#ffafcc",
+  "#bde0fe",
+  "#a2d2ff",
+  "#caf0f8",
+  "#90e0ef",
+  "#00b4d8",
+  "#0077b6",
+  "#03045e",
+];
+
 function App() {
   return (
     <div>
@@ -55,8 +88,11 @@ function App() {
       {/* <RentalPractice data={properties}/> */}
       {/*<Clicker />*/}
       {/*<EventPractice text="Do not click me" log="Why you clicked me?!" />*/}
-      <Counter />
+      {/* <Counter />
       <Toggler />
+      <ToggleCounter /> */}
+      <ColorGrid colorPalette={colorPalette} />
+
     </div>
   );
 }
