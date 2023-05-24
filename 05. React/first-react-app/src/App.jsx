@@ -14,8 +14,9 @@ import "./App.css";
 // import Toggler from "./05. State/Toggler";
 // import ToggleCounter from "./05. State/ToggleCounter"
 // import ColorExercise from "./05. State/ColorExercise";
-import ColorGrid from "./05. State/ColorGrid";
-
+// import ColorGrid from "./05. State/ColorGrid";
+// import ObjectState from "./05. State/ObjectState"
+import EmojiClicker from "./05. State/EmojiClicker";
 
 // ejercicio lista items
 // const data = [
@@ -38,34 +39,34 @@ import ColorGrid from "./05. State/ColorGrid";
 // ];
 
 // ejercicio caja color
-const colorPalette = [
-  "#cdb4db",
-  "#be95c4",
-  "#9f86c0",
-  "#5e548e",
-  "#231942",
-  "#f72585",
-  "#7209b7",
-  "#3a0ca3",
-  "#4361ee",
-  "#4cc9f0",
-  "#560bad",
-  "#b5179e",
-  "#7209b7",
-  "#ffc6ff",
-  "#bdb2ff",
-  "#a0c4ff",
-  "#9bf6ff",
-  "#ffc8dd",
-  "#ffafcc",
-  "#bde0fe",
-  "#a2d2ff",
-  "#caf0f8",
-  "#90e0ef",
-  "#00b4d8",
-  "#0077b6",
-  "#03045e",
-];
+// const colorPalette = [
+//   "#cdb4db",
+//   "#be95c4",
+//   "#9f86c0",
+//   "#5e548e",
+//   "#231942",
+//   "#f72585",
+//   "#7209b7",
+//   "#3a0ca3",
+//   "#4361ee",
+//   "#4cc9f0",
+//   "#560bad",
+//   "#b5179e",
+//   "#7209b7",
+//   "#ffc6ff",
+//   "#bdb2ff",
+//   "#a0c4ff",
+//   "#9bf6ff",
+//   "#ffc8dd",
+//   "#ffafcc",
+//   "#bde0fe",
+//   "#a2d2ff",
+//   "#caf0f8",
+//   "#90e0ef",
+//   "#00b4d8",
+//   "#0077b6",
+//   "#03045e",
+// ];
 
 function App() {
   return (
@@ -91,8 +92,9 @@ function App() {
       {/* <Counter />
       <Toggler />
       <ToggleCounter /> */}
-      <ColorGrid colorPalette={colorPalette} />
-
+      {/* <ColorGrid colorPalette={colorPalette} /> */}
+      {/* <ObjectState/> */}
+      <EmojiClicker/>
     </div>
   );
 }
