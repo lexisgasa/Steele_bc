@@ -24,7 +24,7 @@ export default function EmojiClicker() {
       return previousEmojis.filter((e) => e.id !== id);
     });
   };
-  //   el parametro de borrar pasa el id necesario para filtrar 
+  //   el parametro de borrar pasa el id necesario para filtrar
   return (
     <div>
       {emojis.map((e) => (
