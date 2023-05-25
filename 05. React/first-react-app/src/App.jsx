@@ -16,7 +16,11 @@ import "./App.css";
 // import ColorExercise from "./05. State/ColorExercise";
 // import ColorGrid from "./05. State/ColorGrid";
 // import ObjectState from "./05. State/ObjectState"
-import EmojiClicker from "./05. State/EmojiClicker";
+// import EmojiClicker from "./05. State/EmojiClicker";
+import ScoreKeeper from "./05. State/ScoreKeeper";
+
+
+
 
 // ejercicio lista items
 // const data = [
@@ -94,7 +98,8 @@ function App() {
       <ToggleCounter /> */}
       {/* <ColorGrid colorPalette={colorPalette} /> */}
       {/* <ObjectState/> */}
-      <EmojiClicker/>
+      {/* <EmojiClicker/> */}
+      <ScoreKeeper numPlayers={2} />
     </div>
   );
 }
