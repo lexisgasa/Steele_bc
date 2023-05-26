@@ -21,7 +21,9 @@ import "./App.css";
 // import Dice from "./06. Design/Dice";
 // import LuckyN from "./06. Design/LuckyN";
 // import Box from "./06. Design/Box";
-import BoxGrid from "./06. Design/BoxGrid";
+// import BoxGrid from "./06. Design/BoxGrid";
+import SignupForm from "./07. Form/SignupForm";
+// import UsernameForm from "./07. Form/UsernameForm";
 
 
 
@@ -109,7 +111,9 @@ function App() {
       <Dice dice={[1, 2, 3]} />
       <Dice dice={[6, 9, 2]} color="rebeccapurple" /> */}
       {/* <LuckyN numDice={4} goal={11}/> */}
-      <BoxGrid numBoxes={25} />
+      {/* <BoxGrid numBoxes={25} /> */}
+      {/* <UsernameForm /> */}
+      <SignupForm />
     </div>
   );
 }
