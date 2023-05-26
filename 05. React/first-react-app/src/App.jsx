@@ -17,7 +17,10 @@ import "./App.css";
 // import ColorGrid from "./05. State/ColorGrid";
 // import ObjectState from "./05. State/ObjectState"
 // import EmojiClicker from "./05. State/EmojiClicker";
-import ScoreKeeper from "./05. State/ScoreKeeper";
+// import ScoreKeeper from "./05. State/ScoreKeeper";
+// import Dice from "./06. Design/Dice";
+import LuckyN from "./06. Design/LuckyN";
+
 
 
 
@@ -99,7 +102,11 @@ function App() {
       {/* <ColorGrid colorPalette={colorPalette} /> */}
       {/* <ObjectState/> */}
       {/* <EmojiClicker/> */}
-      <ScoreKeeper numPlayers={2} />
+      {/* <ScoreKeeper numPlayers={2} /> */}
+      {/* <Dice dice={[3, 6, 1]} color="darkslateblue" />
+      <Dice dice={[1, 2, 3]} />
+      <Dice dice={[6, 9, 2]} color="rebeccapurple" /> */}
+      <LuckyN numDice={4} goal={11}/>
     </div>
   );
 }
