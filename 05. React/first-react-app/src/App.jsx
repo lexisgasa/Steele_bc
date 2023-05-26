@@ -19,7 +19,9 @@ import "./App.css";
 // import EmojiClicker from "./05. State/EmojiClicker";
 // import ScoreKeeper from "./05. State/ScoreKeeper";
 // import Dice from "./06. Design/Dice";
-import LuckyN from "./06. Design/LuckyN";
+// import LuckyN from "./06. Design/LuckyN";
+// import Box from "./06. Design/Box";
+import BoxGrid from "./06. Design/BoxGrid";
 
 
 
@@ -106,7 +108,8 @@ function App() {
       {/* <Dice dice={[3, 6, 1]} color="darkslateblue" />
       <Dice dice={[1, 2, 3]} />
       <Dice dice={[6, 9, 2]} color="rebeccapurple" /> */}
-      <LuckyN numDice={4} goal={11}/>
+      {/* <LuckyN numDice={4} goal={11}/> */}
+      <BoxGrid numBoxes={25} />
     </div>
   );
 }
