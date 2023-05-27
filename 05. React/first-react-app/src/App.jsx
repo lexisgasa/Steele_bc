@@ -1,3 +1,4 @@
+import QuoteFetcher from "./08. Effects/QuoteFetcher";
 import "./App.css";
 // import PokemonGenerator from './01. GeneratePokemon/PokemonCard'
 // import {Greeter, Die} from "./02. Props/Greeter";
@@ -26,7 +27,7 @@ import "./App.css";
 // import SignupForm from "./07. Form/SignupForm";
 // import BetterSignupForm from "./07. Form/BetterSignupForm"
 // import ShoppingListForm from "./07. Form/ShoppingListForm";
-import ShoppingList from "./07. Form/ShoppingList";
+// import ShoppingList from "./07. Form/ShoppingList";
 
 
 
@@ -118,7 +119,8 @@ function App() {
       {/* <SignupForm /> */}
       {/* <BetterSignupForm /> */}
       {/* <ShoppingListForm /> */}
-      <ShoppingList />
+      {/* <ShoppingList /> */}
+      <QuoteFetcher/>
     </div>
   );
 }
