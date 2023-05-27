@@ -22,9 +22,11 @@ import "./App.css";
 // import LuckyN from "./06. Design/LuckyN";
 // import Box from "./06. Design/Box";
 // import BoxGrid from "./06. Design/BoxGrid";
-import SignupForm from "./07. Form/SignupForm";
 // import UsernameForm from "./07. Form/UsernameForm";
-
+// import SignupForm from "./07. Form/SignupForm";
+// import BetterSignupForm from "./07. Form/BetterSignupForm"
+// import ShoppingListForm from "./07. Form/ShoppingListForm";
+import ShoppingList from "./07. Form/ShoppingList";
 
 
 
@@ -113,7 +115,10 @@ function App() {
       {/* <LuckyN numDice={4} goal={11}/> */}
       {/* <BoxGrid numBoxes={25} /> */}
       {/* <UsernameForm /> */}
-      <SignupForm />
+      {/* <SignupForm /> */}
+      {/* <BetterSignupForm /> */}
+      {/* <ShoppingListForm /> */}
+      <ShoppingList />
     </div>
   );
 }
